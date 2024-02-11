@@ -4,12 +4,12 @@
  * Created at: Feb 09, 2024
  */
 
-import { useRef } from 'react'
-import { Fireworks } from '@fireworks-js/react'
-import './App.css'
+import { useRef } from "react";
+import { Fireworks } from "@fireworks-js/react";
+import "./App.css";
 
 function App() {
-  const fireworksRef = useRef(null)
+  const fireworksRef = useRef(null);
   return (
     <div className="container">
       <div className="fireworks-area">
@@ -25,7 +25,9 @@ function App() {
       </div>
 
       <div className="content">
-        <h1 className="title">Happy Lunar New Year!<br />Happy Coding...
+        <h1 className="title">
+          Happy Lunar New Year!
+          <br />
           <div className="animate-color">
             <div className="animate-color__item"></div>
             <div className="animate-color__item"></div>
@@ -34,16 +36,19 @@ function App() {
           </div>
         </h1>
         <div className="author">
-          <a href="https://youtube.com/@trungquandev" target="_blank" alt="trungquandev">
-            <i className="bx bxl-youtube bx-sm"></i>
-            TrungQuanDev - Một lập trình viên!
+          <a
+            href="https://youtube.com/@trungquandev"
+            target="_blank"
+            alt="trungquandev"
+          >
+            @Lê Trung Cương - Lee - Lam
           </a>
         </div>
         {/* Nếu muốn custom nâng cao thì sử dụng ref như ví dụ dưới đây mình làm nút Restart nhé */}
         {/* <button onClick={() => fireworksRef?.current?.clear()}>Restart</button> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
